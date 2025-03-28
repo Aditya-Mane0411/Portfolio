@@ -40,17 +40,17 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
   };
 
   return (
-    <div className="cyber-card group overflow-hidden">
+    <div className="dev-card group overflow-hidden">
       <div className="relative h-48">
         <img 
           src={imageUrl} 
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-cyber-dark via-cyber-dark/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-dev-dark via-dev-dark/60 to-transparent"></div>
         
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="inline-flex items-center gap-2 py-1 px-3 border border-cyber/30 rounded-full bg-cyber-dark/80 backdrop-blur-sm w-fit font-code text-xs text-cyber mb-2">
+          <div className="inline-flex items-center gap-2 py-1 px-3 border border-dev/30 rounded-full bg-dev-dark/80 backdrop-blur-sm w-fit font-code text-xs text-dev mb-2">
             {getTypeIcon()}
             {getTypeLabel()}
           </div>
@@ -61,17 +61,17 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
       <div className="p-5">
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-2 text-gray-300">
-            <Calendar className="w-4 h-4 text-cyber" />
+            <Calendar className="w-4 h-4 text-dev" />
             <span className="text-sm">{date}</span>
           </div>
           
           <div className="flex items-center gap-2 text-gray-300">
-            <MapPin className="w-4 h-4 text-cyber" />
+            <MapPin className="w-4 h-4 text-dev" />
             <span className="text-sm">{location}</span>
           </div>
           
           {achievement && (
-            <div className="flex items-center gap-2 text-cyber mt-1">
+            <div className="flex items-center gap-2 text-dev mt-1">
               <Trophy className="w-4 h-4" />
               <span className="text-sm font-medium">{achievement}</span>
             </div>
@@ -85,7 +85,7 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-cyber hover:text-cyber-secondary transition-colors mt-2 text-sm font-code"
+            className="inline-flex items-center gap-2 text-dev hover:text-dev-secondary transition-colors mt-2 text-sm font-code"
           >
             <ExternalLink className="w-4 h-4" />
             Event Details
@@ -99,67 +99,67 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
 const Events = () => {
   const events = [
     {
-      title: "National Cybersecurity Championship",
+      title: "National Coding Championship",
       type: "hackathon" as const,
       date: "October 2023",
       location: "Virtual Event",
-      description: "A 48-hour capture-the-flag competition focused on web security, cryptography, reverse engineering, and forensics challenges.",
+      description: "A 48-hour coding competition focused on developing innovative software solutions for real-world problems.",
       achievement: "1st Place Winner",
       imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f",
-      link: "https://nationalcyberchampionship.com"
+      link: "https://nationalcodingchampionship.com"
     },
     {
-      title: "DEF CON 31",
+      title: "React Summit 2023",
       type: "conference" as const,
       date: "August 2023",
-      location: "Las Vegas, NV, USA",
-      description: "The world's largest hacker convention, featuring the latest research, developments, and emerging threats in information security.",
+      location: "Amsterdam, Netherlands",
+      description: "The largest React conference worldwide, featuring the latest innovations, best practices, and future trends in React ecosystem.",
       imageUrl: "https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae",
-      link: "https://defcon.org"
+      link: "https://reactsummit.com"
     },
     {
-      title: "Cloud Security Summit",
+      title: "Modern Web Development Summit",
       type: "conference" as const,
       date: "May 2023",
       location: "Bangalore, India",
-      description: "A specialized conference on securing cloud infrastructure, featuring talks from industry experts on best practices and emerging threats.",
+      description: "A specialized conference on modern web development technologies, featuring talks from industry experts on frontend, backend, and DevOps.",
       imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      link: "https://cloudsecuritysummit.dev"
+      link: "https://webdevsummit.dev"
     },
     {
-      title: "Ethical Hacking Bootcamp",
+      title: "Full Stack Bootcamp",
       type: "workshop" as const,
       date: "March 2023",
       location: "Delhi, India",
-      description: "An intensive 3-day workshop covering practical ethical hacking techniques, tools, and methodologies for penetration testing.",
+      description: "An intensive 3-day workshop covering practical full-stack development techniques using React, Node.js, and MongoDB.",
       imageUrl: "https://images.unsplash.com/photo-1526374870839-e155464bb9b2",
-      link: "https://ethicalhackingbootcamp.com"
+      link: "https://fullstackbootcamp.com"
     },
     {
-      title: "University CTF Challenge",
+      title: "University Hackathon",
       type: "hackathon" as const,
       date: "February 2023",
       location: "University Campus",
-      description: "An inter-university competition to solve cybersecurity challenges and capture flags in a simulated environment.",
+      description: "An inter-university competition to build innovative applications in 24 hours using any technology stack.",
       achievement: "2nd Place",
       imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-      link: "https://university-ctf.edu"
+      link: "https://universityhackathon.edu"
     },
     {
-      title: "Network Security Workshop",
+      title: "UI/UX Design Workshop",
       type: "workshop" as const,
       date: "December 2022",
       location: "Mumbai, India",
-      description: "A hands-on workshop focused on securing network infrastructure, detecting intrusions, and implementing defense mechanisms.",
+      description: "A hands-on workshop focused on user interface design principles, user experience optimization, and design systems.",
       imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-      link: "https://networksecurityworkshop.com"
+      link: "https://uxdesignworkshop.com"
     }
   ];
 
   return (
     <section id="events" className="section-container">
       <h2 className="section-title">
-        <Calendar className="w-6 h-6 text-cyber" />
+        <Calendar className="w-6 h-6 text-dev" />
         Events & Conferences
       </h2>
       
