@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-scroll";
-import { X, Menu, Terminal, Shield, Code } from "lucide-react";
+import { X, Menu, Code, FileCode, SquareCode } from "lucide-react";
 
 const NAV_ITEMS = [
   { name: "About", id: "about" },
@@ -35,15 +35,15 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-cyber-dark/90 backdrop-blur-md shadow-lg py-3"
+          ? "bg-dev-dark/90 backdrop-blur-md shadow-lg py-3"
           : "bg-transparent py-5"
       )}
     >
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <Terminal className="w-6 h-6 text-cyber" />
-          <span className="font-code text-xl font-bold tracking-tight text-cyber">
-            Cyber<span className="text-white">Portfolio</span>
+          <Code className="w-6 h-6 text-dev" />
+          <span className="font-code text-xl font-bold tracking-tight text-dev">
+            Dev<span className="text-white">Portfolio</span>
           </span>
         </div>
 
@@ -57,15 +57,15 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={500}
-              className="cursor-pointer font-code text-sm text-white hover:text-cyber transition-colors relative group"
+              className="cursor-pointer font-code text-sm text-white hover:text-dev transition-colors relative group"
             >
               {item.name}
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-cyber transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-dev transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
 
           <button
-            className="px-4 py-2 bg-cyber-dark border border-cyber text-cyber font-code rounded hover:bg-cyber hover:text-cyber-dark transition-all duration-300"
+            className="px-4 py-2 bg-dev-dark border border-dev text-dev font-code rounded hover:bg-dev hover:text-dev-dark transition-all duration-300"
           >
             Contact
           </button>
@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-white hover:text-cyber transition-colors"
+          className="md:hidden text-white hover:text-dev transition-colors"
         >
           {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed top-[60px] left-0 w-full bg-cyber-dark border-t border-cyber/20 transition-all duration-300 md:hidden overflow-hidden",
+          "fixed top-[60px] left-0 w-full bg-dev-dark border-t border-dev/20 transition-all duration-300 md:hidden overflow-hidden",
           isMenuOpen ? "max-h-screen" : "max-h-0"
         )}
       >
@@ -97,13 +97,13 @@ const Navbar = () => {
               offset={-80}
               duration={500}
               onClick={() => setIsMenuOpen(false)}
-              className="cursor-pointer font-code text-white hover:text-cyber py-2 transition-colors border-b border-cyber/20"
+              className="cursor-pointer font-code text-white hover:text-dev py-2 transition-colors border-b border-dev/20"
             >
               {item.name}
             </Link>
           ))}
           <button
-            className="py-2 mt-2 bg-cyber-dark border border-cyber text-cyber font-code rounded hover:bg-cyber hover:text-cyber-dark transition-all duration-300"
+            className="py-2 mt-2 bg-dev-dark border border-dev text-dev font-code rounded hover:bg-dev hover:text-dev-dark transition-all duration-300"
           >
             Contact
           </button>

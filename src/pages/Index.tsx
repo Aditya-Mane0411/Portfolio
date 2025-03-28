@@ -12,11 +12,11 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "John Doe | Cybersecurity Engineer Portfolio";
+    document.title = "John Doe | Software Developer Portfolio";
   }, []);
 
   return (
-    <div className="min-h-screen bg-cyber-dark">
+    <div className="min-h-screen bg-dev-dark">
       <Navbar />
       <Hero />
       <About />

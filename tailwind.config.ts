@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,12 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				cyber: {
-					DEFAULT: '#0cffe1',
-					secondary: '#00ff41',
-					tertiary: '#ff00c8',
-					dark: '#121212',
-					light: '#f0f0f0',
+				dev: {
+					DEFAULT: '#9b87f5',
+					secondary: '#6E59A5',
+					tertiary: '#f06292',
+					dark: '#1A1F2C',
+					light: '#F1F1F1',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -99,19 +98,19 @@ export default {
 				},
 				'blink': {
 					'0%, 100%': { borderColor: 'transparent' },
-					'50%': { borderColor: '#0cffe1' }
+					'50%': { borderColor: '#9b87f5' }
 				},
 				'glow': {
 					'0%, 100%': { 
-						textShadow: '0 0 5px rgba(12, 255, 225, 0.5)',
-						boxShadow: '0 0 10px rgba(12, 255, 225, 0.2)' 
+						textShadow: '0 0 5px rgba(155, 135, 245, 0.5)',
+						boxShadow: '0 0 10px rgba(155, 135, 245, 0.2)' 
 					},
 					'50%': { 
-						textShadow: '0 0 20px rgba(12, 255, 225, 0.8)',
-						boxShadow: '0 0 20px rgba(12, 255, 225, 0.6)' 
+						textShadow: '0 0 20px rgba(155, 135, 245, 0.8)',
+						boxShadow: '0 0 20px rgba(155, 135, 245, 0.6)' 
 					}
 				},
-				'pulse-cyber': {
+				'pulse-dev': {
 					'0%, 100%': { 
 						opacity: '1'
 					},
@@ -125,14 +124,14 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'typing': 'typing 3.5s steps(40, end), blink .75s step-end infinite',
 				'glow': 'glow 3s ease-in-out infinite',
-				'pulse-cyber': 'pulse-cyber 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+				'pulse-dev': 'pulse-dev 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			},
 			fontFamily: {
 				'code': ['"Fira Code"', 'monospace'],
 				'sans': ['Inter', 'sans-serif'],
 			},
 			backgroundImage: {
-				'cyber-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230cffe1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+				'dev-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239b87f5' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
 			}
 		}
 	},

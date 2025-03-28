@@ -8,16 +8,16 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: 225 30% 14%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 225 30% 14%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 3.9%;
+    --popover: 225 30% 14%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 175 100% 50%;
+    --primary: 260 76% 74%;
     --primary-foreground: 240 5.9% 10%;
 
     --secondary: 240 3.7% 15.9%;
@@ -26,7 +26,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 142 84% 50%;
+    --accent: 340 82% 66%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -34,18 +34,18 @@
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 142 84% 50%;
+    --ring: 260 76% 74%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 240 10% 3.9%;
+    --sidebar-background: 225 30% 14%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 175 100% 50%;
+    --sidebar-primary: 260 76% 74%;
     --sidebar-primary-foreground: 240 5.9% 10%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 175 100% 50%;
+    --sidebar-ring: 260 76% 74%;
   }
 
   * {
@@ -53,32 +53,32 @@
   }
 
   body {
-    @apply bg-cyber-dark text-white font-sans;
+    @apply bg-dev-dark text-white font-sans;
   }
 
-  /* Cybersecurity themed utility classes */
+  /* Software Development themed utility classes */
   .terminal-text {
-    @apply font-code text-cyber;
+    @apply font-code text-dev;
   }
 
-  .cyber-card {
-    @apply border border-cyber/30 bg-cyber-dark bg-opacity-80 rounded-md backdrop-blur-sm hover:shadow-[0_0_10px_rgba(12,255,225,0.3)] transition-all duration-300;
+  .dev-card {
+    @apply border border-dev/30 bg-dev-dark bg-opacity-80 rounded-md backdrop-blur-sm hover:shadow-[0_0_10px_rgba(155,135,245,0.3)] transition-all duration-300;
   }
 
-  .cyber-border {
-    @apply border border-cyber/30;
+  .dev-border {
+    @apply border border-dev/30;
   }
 
-  .cyber-glow {
+  .dev-glow {
     @apply animate-glow;
   }
 
-  .cyber-title {
-    @apply text-cyber font-code font-bold;
+  .dev-title {
+    @apply text-dev font-code font-bold;
   }
 
   .code-block {
-    @apply font-code bg-black/50 p-4 rounded-md border border-cyber/20 text-cyber overflow-x-auto;
+    @apply font-code bg-black/50 p-4 rounded-md border border-dev/20 text-dev overflow-x-auto;
   }
 
   .typing-container {
@@ -86,18 +86,18 @@
   }
 
   .typing-text {
-    @apply overflow-hidden whitespace-nowrap border-r-2 border-cyber inline-block animate-typing;
+    @apply overflow-hidden whitespace-nowrap border-r-2 border-dev inline-block animate-typing;
   }
 
   .section-title {
-    @apply text-2xl sm:text-3xl font-bold mb-6 inline-flex items-center gap-2 text-white relative before:absolute before:w-full before:h-[1px] before:bg-cyber/30 before:bottom-0 after:absolute after:w-1/4 after:h-[2px] after:bg-cyber after:bottom-0 pb-2;
+    @apply text-2xl sm:text-3xl font-bold mb-6 inline-flex items-center gap-2 text-white relative before:absolute before:w-full before:h-[1px] before:bg-dev/30 before:bottom-0 after:absolute after:w-1/4 after:h-[2px] after:bg-dev after:bottom-0 pb-2;
   }
 
   .section-container {
     @apply max-w-6xl mx-auto px-6 py-16 relative;
   }
 
-  .link-cyber {
-    @apply text-cyber hover:text-cyber-secondary hover:underline transition-colors duration-300;
+  .link-dev {
+    @apply text-dev hover:text-dev-secondary hover:underline transition-colors duration-300;
   }
 }
