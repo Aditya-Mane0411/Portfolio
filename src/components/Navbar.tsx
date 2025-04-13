@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-scroll";
@@ -11,6 +10,7 @@ const NAV_ITEMS = [
   { name: "Certifications", id: "certifications" },
   { name: "Events", id: "events" },
   { name: "Blogs", id: "blogs" },
+  { name: "Contact", id: "contact" },
 ];
 
 const Navbar = () => {
@@ -63,12 +63,6 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-dev transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-
-          <button
-            className="px-4 py-2 bg-dev-dark border border-dev text-dev font-code rounded hover:bg-dev hover:text-dev-dark transition-all duration-300"
-          >
-            Contact
-          </button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -102,11 +96,6 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
-          <button
-            className="py-2 mt-2 bg-dev-dark border border-dev text-dev font-code rounded hover:bg-dev hover:text-dev-dark transition-all duration-300"
-          >
-            Contact
-          </button>
         </div>
       </div>
     </header>
