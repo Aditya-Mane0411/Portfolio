@@ -39,7 +39,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
           <p className="text-gray-300 mb-6">
-            Hello! I'm a final-year B.Tech student specializing in Computer Engineering with a focus on full-stack development. My journey in software engineering began when I discovered my passion for building applications that solve real-world problems.
+            Hello! I'm Aditya, a final-year B.Tech student specializing in Computer Engineering with a focus on full-stack development. My journey in software engineering began when I discovered my passion for building applications that solve real-world problems.
           </p>
           
           <p className="text-gray-300 mb-6">
@@ -52,7 +52,7 @@ const About = () => {
           
           <div className="mt-8 code-block">
             <pre>{`const aboutMe = {
-  name: "John Doe",
+  name: "Aditya",
   role: "Software Developer",
   education: "B.Tech Computer Engineering",
   interests: ["Web Development", "Cloud Computing", "UI/UX Design"],

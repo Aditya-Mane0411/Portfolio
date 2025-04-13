@@ -37,7 +37,7 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               <span className="block text-white">Hi, I'm </span>
-              <span className="dev-title">John Doe</span>
+              <span className="dev-title">Aditya</span>
             </h1>
             
             <div className="typing-container">

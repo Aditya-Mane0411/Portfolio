@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>
-            <h3 className="text-white text-xl font-bold mb-6">John Doe</h3>
+            <h3 className="text-white text-xl font-bold mb-6">Aditya</h3>
             <p className="text-gray-400 mb-6">
               B.Tech Engineering Student specializing in Software Development. Passionate about web technologies, cloud computing, and creating intuitive user experiences.
             </p>
@@ -21,7 +20,7 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center border border-dev/30 text-dev hover:bg-dev hover:text-dev-dark transition-all duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="mailto:john.doe@example.com" className="w-10 h-10 rounded-full flex items-center justify-center border border-dev/30 text-dev hover:bg-dev hover:text-dev-dark transition-all duration-300">
+              <a href="mailto:aditya@example.com" className="w-10 h-10 rounded-full flex items-center justify-center border border-dev/30 text-dev hover:bg-dev hover:text-dev-dark transition-all duration-300">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -67,13 +66,13 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+            &copy; {new Date().getFullYear()} Aditya. All rights reserved.
           </div>
           
           <div className="inline-flex items-center">
             <span className="text-xs text-gray-500 mr-2">Made with</span>
             <span className="text-dev">❤</span>
-            <span className="text-xs text-gray-500 ml-2">by John Doe</span>
+            <span className="text-xs text-gray-500 ml-2">by Aditya</span>
           </div>
         </div>
       </div>

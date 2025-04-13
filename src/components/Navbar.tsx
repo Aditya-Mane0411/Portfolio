@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <Code className="w-6 h-6 text-dev" />
           <span className="font-code text-xl font-bold tracking-tight text-dev">
-            Dev<span className="text-white">Portfolio</span>
+            Aditya<span className="text-white">.codes</span>
           </span>
         </div>
 
