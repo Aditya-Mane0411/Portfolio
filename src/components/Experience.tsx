@@ -94,48 +94,34 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Development Intern",
-      company: "InnovateTech Solutions",
-      duration: "May 2023 - Aug 2023",
+      title: "Full Stack Web Development Intern",
+      company: "Placify Technologies",
+      duration: "June 2024 - Aug 2024",
       location: "Remote",
-      description: "Worked with the development team to build and maintain web applications, focusing on responsive UI design and API integration.",
+      description: "Worked on building responsive, cross-platform web applications using modern web development technologies.",
       responsibilities: [
-        "Developed responsive frontend components using React and TypeScript",
-        "Implemented RESTful APIs using Node.js and Express",
-        "Participated in code reviews and pair programming sessions",
-        "Optimized application performance through lazy loading and code splitting"
+        "Developed and maintained responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap",
+        "Designed and deployed a personal portfolio website showcasing projects, certifications, and technical skills.",
+        "Ensured cross-browser compatibility and responsive design across multiple screen sizes and devices",
+        "Troubleshot and debugged issues in both front-end and back-end codebases"
       ],
-      technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Git"],
-      link: "https://innovatetech.com"
+      technologies: ["React", "HTML", "CSS", "Node.js", "Express", "MongoDB", "Git"],
+     // link: "https://www.playbook.com/s/adityamane/hY3kngkWVX8Pw2mUYam5kWmE?assetToken=jN14r7fuf7Mkq21F9WPDmL4L"
     },
     {
-      title: "Junior Web Developer",
-      company: "CodeCraft Technologies",
-      duration: "June 2022 - Aug 2022",
-      location: "Bangalore, India",
-      description: "Worked on the frontend team to develop user interfaces and implement responsive designs for various client projects.",
+      title: "Cybersecurity Intern",
+      company: "Cyber Vidyapeeth",
+      duration: "June 2023 - Aug 2023",
+      location: "Remote",
+      description: "gained hands-on experience in core cybersecurity concepts, tools, and practices by actively participating in real-world projects under expert mentorship.",
       responsibilities: [
-        "Created interactive UI components with React and Styled Components",
-        "Implemented state management using Redux and Context API",
-        "Collaborated with UI/UX designers to implement pixel-perfect designs",
-        "Fixed cross-browser compatibility issues and improved accessibility"
+        "Implemented cybersecurity basics in actual live projects using Kali Linux",
+        "Developing tools and applications for cybersecurity purposes",
+        "Worked closely with mentors to design and implement security-focused Python applications",
+        "Explored tools and techniques used in ethical hacking, OSINT (Open Source Intelligence), and vulnerability assessment"
       ],
-      technologies: ["React", "JavaScript", "Redux", "CSS3", "HTML5", "Figma"],
-      link: "https://codecraft.tech"
-    },
-    {
-      title: "Research Assistant",
-      company: "University AI Lab",
-      duration: "Jan 2022 - May 2022",
-      location: "Bangalore, India",
-      description: "Assisted professor in research focused on machine learning applications in web development and user experience optimization.",
-      responsibilities: [
-        "Developed data collection and analysis scripts using Python",
-        "Created visualizations of user interaction patterns",
-        "Implemented machine learning models to predict user behavior",
-        "Contributed to research publication on AI-enhanced web experiences"
-      ],
-      technologies: ["Python", "TensorFlow", "Pandas", "Matplotlib", "Jupyter", "Git"]
+      technologies: ["Python", "Wireshark", "Nmap"],
+    //  link: "https://www.playbook.com/s/adityamane/zH2QaEenEJwSwvDaNeUpwJxa?assetToken=L84iDBg2ptQxAVKkJvCVh7b3"
     }
   ];
 

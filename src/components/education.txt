@@ -11,13 +11,7 @@ interface EducationItemProps {
   
 }
 
-const EducationItem = ({ degree,
-  institution,
-  duration, 
-  location, 
-  description, 
-  achievements 
-}: EducationItemProps) => {
+const EducationItem = ({ degree, institution, duration, location, description, achievements }: EducationItemProps) => {
   return (
     <div className="relative pb-12">
       {/* Timeline styling */}
@@ -72,26 +66,39 @@ const Education = () => {
   const educationHistory = [
     {
       degree: "Bachelor of Technology in Computer Engineering",
-      institution: "Symbiosis Skills & Professional University",
-      duration: "2022 - 2026",
-      location: "Pune, India",
-      description: "Specialized in Computer Science with specialisation in Cybersecurity.",
+      institution: "University Institute of Technology",
+      duration: "2020 - 2024",
+      location: "Bangalore, India",
+      description: "Specialized in Software Development with a minor in Artificial Intelligence.",
       achievements: [
-        "Maintained a CGPA of 8.5/10 throughout the program",
-        "Finalist at Hack IITK 2025, IIT Kanpur, for presenting a cybersecurity-focused web app.",
-        "Gained knowlege of cybersecurity integrated with computer science",
-        "Developed an OWASP Risk calculator as a minor project"
+        "Maintained a CGPA of 9.2/10 throughout the program",
+        "Lead developer of the university's student portal",
+        "Developed a real-time collaborative code editor for final year project",
+        "Received merit scholarship for academic excellence"
       ]
     },
     {
       degree: "High School Diploma (Science)",
-      institution: "H.B. Girme Junior college ",
-      duration: "2020 - 2022",
-      location: "Pune, India",
-      description: "Focused on Information Technology, Mathematics and Physics with special emphasis on programming fundamentals.",
+      institution: "Delhi Public School",
+      duration: "2018 - 2020",
+      location: "Delhi, India",
+      description: "Focused on Computer Science, Mathematics and Physics with special emphasis on programming fundamentals.",
       achievements: [
-        "Graduated with 65% aggregate marks",
-       
+        "Graduated with 95% aggregate marks",
+        "Won first place in National Coding Olympiad",
+        "Developed a school management system as a final project"
+      ]
+    },
+    {
+      degree: "Full Stack Development Bootcamp",
+      institution: "Tech Academy",
+      duration: "Summer 2022",
+      location: "Online",
+      description: "Intensive 12-week bootcamp focused on modern web development technologies and software architecture.",
+      achievements: [
+        "Achieved top 5% ranking among 500+ participants",
+        "Built a fully functional e-commerce platform as capstone project",
+        "Received Excellence in Web Development certificate"
       ]
     }
   ];
@@ -100,8 +107,8 @@ const Education = () => {
     <section id="education" className="section-container bg-dev-dark/50">
       <h2 className="section-title">
         <Book className="w-6 h-6 text-dev" />
-        Education 
-      </h2> 
+        Education
+      </h2>
       
       <div className="max-w-3xl mx-auto">
         {educationHistory.map((education, index) => (

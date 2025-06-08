@@ -47,7 +47,8 @@ const BlogPostCard = ({ title, excerpt, date, category, readTime, imageUrl, slug
           to={`/blog/${slug}`}
           className="inline-flex items-center gap-2 text-dev hover:text-dev-secondary transition-colors font-code text-sm group"
         >
-          Read Article 
+           <a href="https://journey-of-hacking.blogspot.com/2023/08/unravelling-history-of-hacking-hacker.html" >Read Article </a>
+          
           <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
@@ -58,15 +59,15 @@ const BlogPostCard = ({ title, excerpt, date, category, readTime, imageUrl, slug
 const Blogs = () => {
   const blogPosts = [
     {
-      title: "Building Scalable React Applications with Custom Hooks",
+      title: " Unravelling the History of Hacking, Hacker Profiles, and the Complex World of Cybercrime",
       excerpt: "Custom hooks are a powerful feature in React that lets you extract component logic into reusable functions. Learn how to leverage them to build more maintainable applications.",
-      date: "February 15, 2024",
-      category: "React",
+      date: "August 25, 2023",
+      category: "Cybersecurity",
       readTime: "8 min",
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+      imageUrl: "https://kashmirobserver.net/wp-content/uploads/2024/09/Cyber-Security.jpg",
       slug: "building-scalable-react-applications"
     },
-    {
+  /*  {
       title: "The Future of Frontend Development: What to Expect in 2024",
       excerpt: "Frontend development is constantly evolving. This article explores upcoming trends, technologies, and best practices that will shape the frontend landscape in 2024.",
       date: "January 28, 2024",
@@ -110,14 +111,14 @@ const Blogs = () => {
       readTime: "9 min",
       imageUrl: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f",
       slug: "responsive-dashboard-tailwind-css"
-    }
+    } */
   ];
 
   return (
     <section id="blogs" className="section-container bg-dev-dark/50">
       <h2 className="section-title">
         <FileText className="w-6 h-6 text-dev" />
-        Blog Articles
+        Blog 
       </h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -128,11 +129,11 @@ const Blogs = () => {
       
       <div className="text-center mt-10">
         <a
-          href="#"
-          className="px-6 py-3 bg-transparent border border-dev text-dev font-code font-semibold rounded hover:bg-dev/10 transition-colors duration-300 inline-flex items-center gap-2"
+          href="https://journey-of-hacking.blogspot.com/2023/08/unravelling-history-of-hacking-hacker.html"
+          
         >
-          View All Articles
-          <ArrowRight className="w-4 h-4" />
+
+          
         </a>
       </div>
     </section>

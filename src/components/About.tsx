@@ -10,10 +10,7 @@ const Skill = ({ icon: Icon, name, level }: { icon: any, name: string, level: nu
         <h3 className="font-code text-sm font-medium">{name}</h3>
       </div>
       <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
-        <div 
-          className="h-full bg-gradient-to-r from-dev to-dev-tertiary rounded-full"
-          style={{ width: `${level}%` }}
-        ></div>
+        <div className="h-full bg-gradient-to-r from-dev to-dev-tertiary rounded-full" style={{ width: `${level}%` }} ></div>
       </div>
     </div>
   );
@@ -23,7 +20,7 @@ const About = () => {
   const skills = [
     { name: "Frontend Development", icon: Code, level: 90 },
     { name: "Backend Development", icon: Server, level: 85 },
-    { name: "React & Next.js", icon: FileCode, level: 95 },
+    { name: "React & Node.js", icon: FileCode, level: 95 },
     { name: "DevOps & CI/CD", icon: Terminal, level: 80 },
     { name: "Database Design", icon: Database, level: 75 },
     { name: "System Architecture", icon: Settings, level: 85 }
@@ -46,17 +43,15 @@ const About = () => {
             I have a strong foundation in modern web technologies, cloud infrastructure, and software design patterns. Throughout my academic career, I've focused on developing practical skills alongside theoretical knowledge to build scalable and maintainable software solutions.
           </p>
           
-          <p className="text-gray-300">
-            When I'm not coding, you can find me contributing to open-source projects, participating in hackathons, and exploring emerging technologies like serverless architectures and edge computing.
-          </p>
+        
           
           <div className="mt-8 code-block">
             <pre>{`const aboutMe = {
   name: "Aditya",
   role: "Software Developer",
   education: "B.Tech Computer Engineering",
-  interests: ["Web Development", "Cloud Computing", "UI/UX Design"],
-  languages: ["JavaScript", "TypeScript", "Python", "Java"],
+  interests: ["Web Development", "Software Development", "UI/UX Design"],
+  languages: ["JavaScript", "Python", "Java", "HTML", "CSS"],
   currentFocus: "Building scalable applications with React and Node.js"
 };`}</pre>
           </div>
@@ -71,15 +66,15 @@ const About = () => {
             ))}
           </div>
           
-          <h3 className="text-xl font-code text-dev mt-8 mb-4">Certifications & Achievements</h3>
+          <h3 className="text-xl font-code text-dev mt-8 mb-4"></h3>
           
           <ul className="space-y-3">
-            {[
+            {[/*
               "AWS Certified Developer - Associate",
               "Microsoft Certified: Azure Developer Associate",
               "Google Cloud Professional Developer",
               "1st Place, National Coding Challenge 2023",
-              "Open Source Contributor with 25+ pull requests merged"
+              "Open Source Contributor with 25+ pull requests merged" */
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-2">
                 <span className="text-dev mt-1">〉</span>

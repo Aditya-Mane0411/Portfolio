@@ -88,7 +88,7 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
             className="inline-flex items-center gap-2 text-dev hover:text-dev-secondary transition-colors mt-2 text-sm font-code"
           >
             <ExternalLink className="w-4 h-4" />
-            Event Details
+            Verify
           </a>
         )}
       </div>
@@ -99,61 +99,34 @@ const EventCard = ({ title, type, date, location, description, achievement, imag
 const Events = () => {
   const events = [
     {
-      title: "National Coding Championship",
+      title: "Hack IITK",
       type: "hackathon" as const,
-      date: "October 2023",
-      location: "Virtual Event",
-      description: "A 48-hour coding competition focused on developing innovative software solutions for real-world problems.",
-      achievement: "1st Place Winner",
+      date: "February 2025",
+      location: "On-site event",
+      description: "A coding competition focused on developing innovative AI integrated software solutions for real-world problems.",
+      achievement: "Finalist",
       imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f",
-      link: "https://nationalcodingchampionship.com"
+      link: "https://www.playbook.com/s/adityamane/JAiV1QMJVKtKPyUgSqrrXebN?assetToken=iHxT2E1YZWY3pEHPLjibKa5o"
     },
     {
-      title: "React Summit 2023",
-      type: "conference" as const,
-      date: "August 2023",
-      location: "Amsterdam, Netherlands",
-      description: "The largest React conference worldwide, featuring the latest innovations, best practices, and future trends in React ecosystem.",
-      imageUrl: "https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae",
-      link: "https://reactsummit.com"
+      title: "Cybersecurity with Ethical Hacking",
+      type: "workshop" as const,
+      date: "January 2025",
+      location: "IIT Hyderabad, India",
+      description: "A hands-on workshop focused on core cybersecurity principles and ethical hacking practices, conducted by industry experts and faculty at IIT Hyderabad.",
+      imageUrl: "https://www.shutterstock.com/image-vector/anonymous-hacker-using-laptop-on-260nw-2318813861.jpg",
+      link: "https://www.playbook.com/s/adityamane/s1q5u23H7jRMP6XUaU5GLJHN?assetToken=kz1M1xdEeT5EXhhhuUH3QYJo"
     },
     {
-      title: "Modern Web Development Summit",
+      title: "Identity Shield Summit",
       type: "conference" as const,
-      date: "May 2023",
-      location: "Bangalore, India",
-      description: "A specialized conference on modern web development technologies, featuring talks from industry experts on frontend, backend, and DevOps.",
-      imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      date: "Jaunary 2025",
+      location: "Pune, India",
+      description: "The IdentityShield Summit '25 conference united the cybersecurity community, highlighting innovation and collaboration in the age of AI.",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGyG65QJf-CvOylaxQR3C8ZjstjwT78QpnQ&s",
       link: "https://webdevsummit.dev"
     },
-    {
-      title: "Full Stack Bootcamp",
-      type: "workshop" as const,
-      date: "March 2023",
-      location: "Delhi, India",
-      description: "An intensive 3-day workshop covering practical full-stack development techniques using React, Node.js, and MongoDB.",
-      imageUrl: "https://images.unsplash.com/photo-1526374870839-e155464bb9b2",
-      link: "https://fullstackbootcamp.com"
-    },
-    {
-      title: "University Hackathon",
-      type: "hackathon" as const,
-      date: "February 2023",
-      location: "University Campus",
-      description: "An inter-university competition to build innovative applications in 24 hours using any technology stack.",
-      achievement: "2nd Place",
-      imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-      link: "https://universityhackathon.edu"
-    },
-    {
-      title: "UI/UX Design Workshop",
-      type: "workshop" as const,
-      date: "December 2022",
-      location: "Mumbai, India",
-      description: "A hands-on workshop focused on user interface design principles, user experience optimization, and design systems.",
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-      link: "https://uxdesignworkshop.com"
-    }
+   
   ];
 
   return (

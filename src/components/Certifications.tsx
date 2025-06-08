@@ -15,11 +15,13 @@ const CertificationCard = ({ title, issuer, date, credentialId, imageUrl, link }
     <div className="dev-card group hover:scale-105 transition-all duration-300">
       <div className="relative overflow-hidden aspect-video bg-gradient-to-br from-dev-dark/90 to-dev-dark/60 rounded-t-md">
         <div className="absolute inset-0 bg-dev-pattern opacity-30"></div>
-        <img 
-          src={imageUrl} 
-          alt={title} 
-          className="w-full h-full object-contain p-6 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-300"
-        />
+  <img 
+  src={imageUrl} 
+  alt={title} 
+  className="w-full h-full object-contain p-6 mix-blend-normal transition-all duration-300"
+/>
+
+
       </div>
       
       <div className="p-5 border-t border-dev/20">
@@ -54,57 +56,65 @@ const CertificationCard = ({ title, issuer, date, credentialId, imageUrl, link }
 const Certifications = () => {
   const certifications = [
     {
-      title: "AWS Certified Developer - Associate",
-      issuer: "Amazon Web Services",
-      date: "December 2023",
-      credentialId: "AWS123456789",
-      imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7",
-      link: "https://aws.amazon.com/certification"
+      title: "JavaScript Essentials ",
+      issuer: "Cisco",
+      date: "July 2023",
+      //credentialId: "AWS123456789",
+      imageUrl: "https://www.infoworld.com/wp-content/uploads/2025/05/2263137-0-24139200-1747637392-shutterstock_1361674454-100939444-orig.jpg?quality=50&strip=all",
+      link: "https://www.playbook.com/s/adityamane/4ULpMiTZvThDSGC8YP4G6ry6?assetToken=3Lo14krewBXkxTknPfWNShHv"
     },
     {
-      title: "Microsoft Certified: Azure Developer Associate",
-      issuer: "Microsoft",
-      date: "August 2023",
-      credentialId: "MS987654321",
-      imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
-      link: "https://learn.microsoft.com/en-us/certifications"
+      title: "Python Essentials",
+      issuer: "Cisco",
+      date: "July 2023",
+      //credentialId: "MS987654321",
+      imageUrl: "https://cdn.activestate.com/wp-content/uploads/2021/12/python-coding-mistakes.jpg",
+      link: "https://www.playbook.com/s/adityamane/Wyyysz1deNgtbFygm7igU9kL?assetToken=4E4Bz7HkSeffJUJrdVPXuvgx"
     },
-    {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "March 2023",
-      credentialId: "GCP234567891",
-      imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8",
-      link: "https://cloud.google.com/certification"
-    },
-    {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "February 2023",
-      credentialId: "META12345678",
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-      link: "https://www.meta.com/certificates"
-    },
-    {
-      title: "Node.js Application Developer",
-      issuer: "OpenJS Foundation",
-      date: "November 2022",
-      credentialId: "NODE98765432",
-      imageUrl: "https://images.unsplash.com/photo-1562813733-b31f0941b2b6",
-      link: "https://openjsf.org"
-    },
-    {
-      title: "Professional Scrum Developer",
-      issuer: "Scrum.org",
-      date: "September 2022",
-      credentialId: "SCRUM87654321",
-      imageUrl: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb",
+    {      
+      title: "Java Programming",
+      issuer: "Udemy",
+      date: "April 2023",
+   //   credentialId: "SCRUM87654321",
+      imageUrl: "https://amigoscode.com/assets/thumbnails/courses/java-for-developers.webp",
       link: "https://www.scrum.org/certificates"
+    },
+    {
+      title: "Google AI Essentials",
+      issuer: "Coursera",
+      date: "June 2024",
+    //  credentialId: "GCP234567891",
+      imageUrl: "https://www.computerworld.com/wp-content/uploads/2025/02/2517498-0-09119900-1740378700-shutterstock_offset_2321455729.jpg?quality=50&strip=all&w=1024",
+      link: "https://www.playbook.com/s/adityamane/Wyyysz1deNgtbFygm7igU9kL?assetToken=4E4Bz7HkSeffJUJrdVPXuvgx"
+    },
+    {
+      title: "Cyber Threat Management",
+      issuer: "Cisco",
+      date: "April 2024",
+    //  credentialId: "META12345678",
+      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+      link: "https://www.playbook.com/s/adityamane/n9FnsCozJ5zodGsQfuzjFQMJ?assetToken=LRRscicTb7H3TCpaUkmCvRvX"
+    },
+    {
+      title: "Google Cybersecurity",
+      issuer: "Coursera",
+      date: "June 2024",
+    //  credentialId: "NODE98765432",
+      imageUrl: "https://images.credly.com/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/image.png",
+      link: "https://www.playbook.com/s/adityamane/KKST8gt6xWAieTH1Da1tv8gj?assetToken=okuVtfpAWkDex88sDRNBTM7u"
+    },
+    {
+      title: "DSA in Python",
+      issuer: "Udemy",
+      date: "March 2025",
+   //   credentialId: "SCRUM87654321",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMTp5_rdoavOMP26C_CmQO_NqSzMw-qA-OVQ&s",
+      link: "https://www.playbook.com/s/adityamane/KKST8gt6xWAieTH1Da1tv8gj?assetToken=okuVtfpAWkDex88sDRNBTM7u"
     }
   ];
 
   return (
-    <section id="certifications" className="section-container bg-dev-dark/50">
+    <section id="certifications" className="section-container bg-dev-/50">
       <h2 className="section-title">
         <Award className="w-6 h-6 text-dev" />
         Certifications
