@@ -1,69 +1,225 @@
-# Welcome to your Lovable project
+# Adi Portfolio
 
-## Project info
+A modern, responsive personal portfolio website showcasing projects, certifications, and skills through a clean, accessible user interface. Built with cutting-edge web technologies for optimal performance and user experience.
 
-**URL**: https://lovable.dev/projects/232a3764-a85c-4975-b2ba-67d429fe54a5
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+### Core Features
+- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Interactive Components**: Engaging user interface with hover effects and interactive elements
+- **Accessibility First**: Built with accessibility best practices using Radix UI primitives
+- **Performance Optimized**: Fast loading times with optimized assets and modern build tools
 
-**Use Lovable**
+### Portfolio Sections
+- **Hero Section**: Eye-catching introduction with animated elements
+- **About Me**: Personal introduction and professional background
+- **Projects Showcase**: Detailed project cards with descriptions, technologies used, and links
+- **Certifications**: Display of professional certifications and achievements
+- **Skills & Technologies**: Visual representation of technical skills and expertise
+- **Contact Information**: Easy ways for visitors to get in touch
+- **Smooth Navigation**: Seamless scrolling between sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/232a3764-a85c-4975-b2ba-67d429fe54a5) and start prompting.
+### Technical Features
+- **TypeScript Integration**: Full type safety throughout the application
+- **Component-based Architecture**: Modular, reusable components for maintainability
+- **Custom Design System**: Consistent theming through CSS variables and Tailwind utilities
+- **Form Validation**: Robust form handling with Zod schema validation
+- **Toast Notifications**: User feedback through elegant toast messages
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+### Frontend Framework
+- **React 18** - Modern React with concurrent features
+- **TypeScript** - Type-safe JavaScript development
+- **Vite** - Next-generation frontend build tool
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality, accessible component library
+- **Radix UI** - Headless UI primitives for accessibility
+- **Lucide React** - Beautiful, customizable icons
+- **Custom CSS Animations** - Smooth transitions and effects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Form Management
+- **React Hook Form** - Performant form library with minimal re-renders
+- **Zod** - TypeScript-first schema validation
+- **@hookform/resolvers** - Validation resolver for React Hook Form
 
-Follow these steps:
+### Navigation & UX
+- **React Router DOM** - Client-side routing
+- **React Scroll** - Smooth scrolling navigation
+- **Sonner** - Elegant toast notifications
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Development Tools
+- **ESLint** - Code linting and quality assurance
+- **PostCSS** - CSS processing and optimization
+- **Class Variance Authority** - Component variant management
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+adi-portfolio/
+├── public/                     # Static assets
+│   ├── favicon.ico            # Site favicon
+│   └── images/                # Image assets
+├── src/                       # Source code
+│   ├── components/            # Reusable UI components
+│   │   ├── ui/               # shadcn/ui components
+│   │   ├── sections/         # Page sections (Hero, About, Projects, etc.)
+│   │   └── layout/           # Layout components (Header, Footer)
+│   ├── pages/                # Page components
+│   ├── hooks/                # Custom React hooks
+│   ├── utils/                # Utility functions
+│   ├── types/                # TypeScript type definitions
+│   ├── styles/               # Global styles and CSS
+│   │   └── globals.css       # Global CSS with design system variables
+│   ├── lib/                  # Library configurations
+│   └── App.tsx               # Main application component
+├── index.html                # HTML entry point
+├── package.json              # Project dependencies and scripts
+├── tailwind.config.ts        # Tailwind CSS configuration
+├── tsconfig.json             # TypeScript configuration
+├── vite.config.ts            # Vite build configuration
+└── README.md                 # Project documentation
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn** package manager
+- Modern web browser
 
-**Use GitHub Codespaces**
+### Installation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/adi-portfolio.git
+   cd adi-portfolio
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This project is built with .
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the portfolio
 
-## How can I deploy this project?
+### Build for Production
 
-Simply open [Lovable](https://lovable.dev/projects/232a3764-a85c-4975-b2ba-67d429fe54a5) and click on Share -> Publish.
+```bash
+npm run build
+# or
+yarn build
+```
 
-## I want to use a custom domain - is that possible?
+The built files will be in the `dist` directory, ready for deployment.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 📦 Dependencies
+
+### Core Dependencies
+```json
+{
+  "react": "^18.0.0",
+  "react-dom": "^18.0.0",
+  "react-router-dom": "^6.0.0",
+  "typescript": "^5.0.0"
+}
+```
+
+### UI & Styling
+```json
+{
+  "@radix-ui/react-*": "Latest versions",
+  "tailwindcss": "^3.0.0",
+  "lucide-react": "Latest",
+  "class-variance-authority": "Latest",
+  "clsx": "Latest",
+  "tailwind-merge": "Latest"
+}
+```
+
+### Form & Validation
+```json
+{
+  "react-hook-form": "^7.0.0",
+  "zod": "^3.0.0",
+  "@hookform/resolvers": "^3.0.0"
+}
+```
+
+### Additional Libraries
+```json
+{
+  "react-scroll": "Latest",
+  "sonner": "Latest"
+}
+```
+
+### Development Dependencies
+```json
+{
+  "vite": "^5.0.0",
+  "@vitejs/plugin-react": "^4.0.0",
+  "eslint": "^8.0.0",
+  "postcss": "^8.0.0",
+  "autoprefixer": "^10.0.0"
+}
+```
+
+## 🎨 Design System
+
+The portfolio uses a custom design system built with CSS variables and Tailwind CSS:
+
+- **Colors**: Semantic color tokens for consistent theming
+- **Typography**: Custom font stacks with Google Fonts (Fira Code, Inter)
+- **Spacing**: Consistent spacing scale throughout the application
+- **Components**: Reusable components with variant support
+- **Animations**: Smooth transitions and hover effects
+
+## 🚀 Deployment
+
+### Deployment Steps
+
+1. Build the project: `npm run build`
+2. Upload the `dist` folder to your hosting provider
+3. Configure your domain (optional)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request
+
+## 📞 Contact
+
+- **Email**: adityamane0411@gmail.com
+- **LinkedIn**: [Your LinkedIn Profile](www.linkedin.com/in/aditya-mane-36831826b)
+- **GitHub**: [Your GitHub Profile]([https://github.com/yourusername](https://github.com/Aditya-Mane0411))
+- **Portfolio**: [Live Demo](https://yourportfolio.com)
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the excellent component library
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Lucide](https://lucide.dev/) for the beautiful icon set
+- [Radix UI](https://www.radix-ui.com/) for accessible UI primitives
+
+---
+
+**Built by Adi**
