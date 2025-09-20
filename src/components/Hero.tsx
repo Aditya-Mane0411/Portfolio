@@ -57,7 +57,7 @@ const Hero = () => {
               
               <button className="px-6 py-3 bg-transparent border border-dev text-dev font-code font-semibold rounded hover:bg-dev/10 transition-colors duration-300 flex items-center gap-2">
                 <FileCode className="w-5 h-5" />
-              <a href="https://drive.google.com/file/d/12t--YHQiBNfpS9xy950gOCWOhzHWTizK/view?usp=sharing" >Download CV</a>  
+              <a href="https://drive.google.com/file/d/1p4lEB2ofpbjb3E_3TdNgbVs8UQe938Ct/view?usp=sharing" >Download CV</a>  
               </button>
             </div>
           </div>
