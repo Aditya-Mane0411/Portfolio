@@ -209,7 +209,7 @@ The portfolio uses a custom design system built with CSS variables and Tailwind 
 ## 📞 Contact
 
 - **Email**: adityamane0411@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](www.linkedin.com/in/aditya-mane-36831826b)
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/aditya-mane-36831826b/)
 - **Portfolio**: [Live Demo](https://aditya-portfolio-orcin-iota.vercel.app/)
 
 ## 🙏 Acknowledgments
