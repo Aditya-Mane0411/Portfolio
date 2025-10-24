@@ -210,7 +210,7 @@ The portfolio uses a custom design system built with CSS variables and Tailwind 
 
 - **Email**: adityamane0411@gmail.com
 - **LinkedIn**: [Your LinkedIn Profile](www.linkedin.com/in/aditya-mane-36831826b)
-- **GitHub**: [Your GitHub Profile]([https://github.com/yourusername](https://github.com/Aditya-Mane0411))
+- **GitHub**: [Your GitHub Profile]([[https://github.com/yourusername](https://github.com/Aditya-Mane0411)])
 - **Portfolio**: [Live Demo](https://yourportfolio.com)
 
 ## 🙏 Acknowledgments
