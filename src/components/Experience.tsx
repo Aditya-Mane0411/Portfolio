@@ -94,33 +94,48 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
+      title: "Software Developer Intern",
+      company: "Erfinden Technologies",
+      duration: "June 2025 - Aug 2025",
+      location: "Pune",
+      description: "Developed and deployed a full-stack B2B AgriBusiness marketplace with multilingual support and data-driven insights.",
+      responsibilities: [
+        "Designed and implemented a responsive frontend using ReactJS (TypeScript, Tailwind, Vite) for a seamless user experience.",
+        "Integrated Supabase for backend services including authentication, real-time database operations, and PostgreSQL management.",
+        "Enabled multilingual functionality using Google Translation APIs to enhance accessibility for diverse regional users.",
+        "Conducted Python-based web scraping and data analysis to gather competitor insights and inform product improvements."
+      ],
+      technologies: ["HTML", "CSS", "React", "Node.js", "TypeScript", "PostgreSQL", "GitHub", "Tailwind", "Google API"],
+     // link: "https://www.playbook.com/s/adityamane/hY3kngkWVX8Pw2mUYam5kWmE?assetToken=jN14r7fuf7Mkq21F9WPDmL4L"
+    },
+    {
       title: "Full Stack Web Development Intern",
       company: "Placify Technologies",
       duration: "June 2024 - Aug 2024",
-      location: "Remote",
-      description: "Worked on building responsive, cross-platform web applications using modern web development technologies.",
+      location: "Pune",
+      description: "Contributed to developing and optimizing responsive, cross-platform web applications",
       responsibilities: [
-        "Developed and maintained responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap",
-        "Designed and deployed a personal portfolio website showcasing projects, certifications, and technical skills.",
-        "Ensured cross-browser compatibility and responsive design across multiple screen sizes and devices",
-        "Troubleshot and debugged issues in both front-end and back-end codebases"
+        "Built and maintained responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap to enhance usability and performance.",
+        "Designed and deployed a personal portfolio website highlighting technical projects, achievements, and certifications.",
+        "Ensured cross-browser compatibility and seamless rendering across varied screen sizes and devices.",
+        "Debugged and optimized front-end and back-end codebases to improve functionality and application stability."
       ],
-      technologies: ["React", "HTML", "CSS", "Node.js", "Express", "MongoDB", "Git"],
-     // link: "https://www.playbook.com/s/adityamane/hY3kngkWVX8Pw2mUYam5kWmE?assetToken=jN14r7fuf7Mkq21F9WPDmL4L"
+      technologies: ["React", "HTML", "CSS", "Node.js", "TypeScript", "Bootstrap", "GitHub"],
+    // link: "https://www.playbook.com/s/adityamane/hY3kngkWVX8Pw2mUYam5kWmE?assetToken=jN14r7fuf7Mkq21F9WPDmL4L"
     },
     {
       title: "Cybersecurity Intern",
       company: "Cyber Vidyapeeth",
       duration: "June 2023 - Aug 2023",
       location: "Remote",
-      description: "gained hands-on experience in core cybersecurity concepts, tools, and practices by actively participating in real-world projects under expert mentorship.",
+      description: "Gained hands-on experience in core cybersecurity concepts, tools, and practices by actively participating in real-world projects under expert mentorship.",
       responsibilities: [
         "Implemented cybersecurity basics in actual live projects using Kali Linux",
         "Developing tools and applications for cybersecurity purposes",
         "Worked closely with mentors to design and implement security-focused Python applications",
         "Explored tools and techniques used in ethical hacking, OSINT (Open Source Intelligence), and vulnerability assessment"
       ],
-      technologies: ["Python", "Wireshark", "Nmap"],
+      technologies: ["Python", "Wireshark", "Nmap",],
     //  link: "https://www.playbook.com/s/adityamane/zH2QaEenEJwSwvDaNeUpwJxa?assetToken=L84iDBg2ptQxAVKkJvCVh7b3"
     }
   ];
