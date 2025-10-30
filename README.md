@@ -1,4 +1,4 @@
-# Adi Portfolio
+# Developer Portfolio
 
 A modern, responsive personal portfolio website showcasing projects, certifications, and skills through a clean, accessible user interface. Built with cutting-edge web technologies for optimal performance and user experience.
 
